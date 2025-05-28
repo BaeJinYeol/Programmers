@@ -9,6 +9,7 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
     vector<int> complete;
 
     for (int i = 0; i < progresses.size(); i++) {
+        // int x = (99 - progresses[i]) / speeds[i] + 1;
         int x = ceil((100.0 - progresses[i]) / speeds[i]); // 소수점 올림
         complete.push_back(x);
     }
