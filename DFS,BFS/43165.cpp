@@ -1,6 +1,5 @@
 // dfs, 타겟 넘버, 레벨 2
 #include <vector>
-
 using namespace std;
 
 int count;
