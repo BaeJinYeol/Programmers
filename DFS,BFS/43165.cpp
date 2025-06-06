@@ -2,10 +2,10 @@
 #include <vector>
 using namespace std;
 
-int count;
+int ccount = 0;
 void dfs(vector<int> &numbers, int i, int sum, int target) {
     if (i == numbers.size()) {
-        if (sum == target) count++;
+        if (sum == target) ccount++;
         return;
     }
 
@@ -17,6 +17,6 @@ int solution(vector<int> numbers, int target) {
 
     dfs(numbers, 0, 0, target);
     
-    int answer = count;
+    int answer = ccount;
     return answer;
 }
